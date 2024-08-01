@@ -1,18 +1,25 @@
 .header {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    flex-direction: row-reverse;
     justify-content: center;
     background-color: rgba(149, 128, 128, 0.482);
     height: auto;
-    margin-bottom: 5px;
+    /* margin: 2px; */
     
 }
-header, .title {
+.img {
+    max-width: 100%;
+}
+.image {
+    border: #e50c0c solid 2px;
+    flex: 3;
+}
+.header .title {
+    border: #e50c0c solid 2px;
     color: #e50c0c;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+    flex: 3;
 }
 .menu-line {
     display: flex;
@@ -22,13 +29,16 @@ header, .title {
     gap: 5px;
     padding: 2px;
     height: auto;
-    flex: 1;
+    
+    
 }
 .menu-line div {
     padding: 5px; 
+    
 }
 .menu-line, .menu {
     flex: 2;
+    
 }
 .content-container {
     margin-top: 25px;
@@ -54,6 +64,7 @@ header, .title {
     color: rgb(236, 78, 20);
     flex: 1;
     gap: 5px;
+    order: 1;
     
 
 }
@@ -75,6 +86,7 @@ header, .title {
     width: auto;
     background-color: aquamarine;
     flex: 4;
+    order: 2;
 }
 
 .content-container .right-container {
@@ -88,6 +100,7 @@ header, .title {
     font-size: large;
     font-weight: bolder;
     flex: 1;
+    order: 3;
     
    
   }
